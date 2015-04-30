@@ -5,7 +5,7 @@ class Dealership
   define_method(:initialize) do |name|
     @name = name
     @id = @@dealerships.length().+(1)
-    @cars = []
+    @vehicles = []
   end
   
   define_method(:name) do
@@ -38,12 +38,12 @@ class Dealership
     @@dealerships = []
   end
   
-  define_method(:add_car) do |vehicle|
-    @cars.push(vehicle)
+  define_method(:add_vehicle) do |vehicle|
+    @vehicles.push(vehicle)
   end
   
-  define_method(:cars) do
-    @cars
+  define_method(:vehicles) do
+    @vehicles
   end
   
 end  
